@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="WhatsApp Image 2025-11-30 at 18.14.39_57abe5fc.png" type="image/x-icon">
+
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "YW3Zr6Wqvu1Hp2OCq",
+            });
+        })();
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes subtleFloat {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-6px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            opacity: 0;
+            animation: fadeInUp 0.9s ease-out forwards;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.9s ease-out forwards;
+        }
+
+        .float-slow {
+            animation: subtleFloat 4s ease-in-out infinite;
+        }
+
+        .skill img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            transition: transform 0.25s ease;
+        }
+
+        .skill:hover img {
+            transform: scale(1.2);
+        }
+
+        .skill span {
+            font-size: 0.9rem;
+            color: #e5e7eb;
+            letter-spacing: 0.5px;
+        }
+
+        .skill {
+            margin: 28px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .skill {
+                margin: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-r from-black via-slate-900 to-black text-white">
+
+<div id="home">
+
+    <nav class="shadow-2xl fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-lg border-b border-white/5">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div
+                    class="transition-transform duration-300 hover:scale-110 font-semibold font-[poppins] text-2xl sm:text-3xl bg-gradient-to-b from-purple-500 via-teal-500 to-purple-500 text-transparent bg-clip-text">
+                    Muhammed Shafi
+                </div>
+
+                <div
+                    class="hidden md:flex space-x-6 bg-gradient-to-b from-purple-500 via-teal-500 to-purple-500 text-transparent bg-clip-text text-sm font-medium">
+                    <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+                    <a href="#About" class="hover:text-blue-400 transition-colors">About</a>
+                    <a href="#Skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                    <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+
+                <button id="menu-btn" class="md:hidden text-slate-200 focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                         stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-r from-black via-slate-900 to-black border-t border-white/5">
+            <div class="px-4 py-3 flex flex-col space-y-3 text-base text-slate-100">
+                <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+                <a href="#About" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#Skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    
+    <main class="pt-24 sm:pt-28">
+        <header class="px-4 sm:px-8 py-6 fade-in-up">
+            <div class="max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-10">
+                
+                <div class="flex-1 space-y-6">
+                    <div>
+                        <div class="text-3xl sm:text-4xl md:text-5xl font-semibold text-center lg:text-left">
+                            Hello, I'm
+                        </div>
+                        <div
+                            class="font-[poppins] font-bold text-2xl sm:text-3xl md:text-4xl mt-2 text-center lg:text-left">
+                            Muhammed Shafi KT
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center lg:justify-start my-4">
+                        <div class="text-center lg:text-left">
+                            <div class="text-xl sm:text-2xl font-medium">I’m a Software Engineer</div>
+                            <div class="text-sm sm:text-base text-slate-300 mt-1">
+                                currently I'm working as a trainee at Bridgeon
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center lg:justify-start gap-4">
+                        <a href="https://www.linkedin.com/in/muhammedshafikt?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                           class="transition-transform duration-300 hover:scale-125">
+                            <img src="download.svg" class="w-7 h-7" />
+                        </a>
+                        <a href="#"
+                           class="transition-transform duration-300 hover:scale-125">
+                            <img src="download (1).svg" class="w-7 h-7" />
+                        </a>
+                        <a href="https://www.instagram.com/shhaaafy?igsh=YXBnbHdjZHdkY3A4&utm_source=qr"
+                           class="transition-transform duration-300 hover:scale-125">
+                            <img src="download (2).svg" class="w-7 h-7" />
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="flex-1 flex justify-center lg:justify-end">
+                    <div
+                        class="rounded-3xl overflow-hidden shadow-2xl shadow-cyan-500/20 float-slow">
+                        <img src="WhatsApp Image 2025-11-30 at 18.14.39_57abe5fc.png"
+                             class="w-60 sm:w-80 md:w-[360px] lg:w-[420px] max-w-full h-auto transition-transform duration-300 hover:scale-105"
+                             alt="Profile image">
+                    </div>
+                </div>
+            </div>
+        </header>
+    </main>
+
+    
+    <main id="About" class="mt-40 fade-in-up">
+        <div class="flex justify-center font-bold text-2xl sm:text-3xl transition-transform duration-300 hover:scale-110">
+            ABOUT ME
+        </div>
+
+        <div class="max-w-6xl mx-auto mt-10 px-4 flex flex-col lg:flex-row items-center gap-10">
+            <div class="w-full lg:w-1/2 flex justify-center">
+                <img src="WhatsApp Image 2025-11-30 at 18.14.39_57abe5fc.png"
+                     class="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg w-full h-auto rounded-3xl shadow-xl shadow-purple-500/20 transition-transform duration-300 hover:scale-105"
+                     alt="About image">
+            </div>
+
+            <div class="w-full lg:w-1/2">
+                <p class="text-slate-100 text-sm sm:text-base leading-relaxed">
+                    I am a MERN-stack web developer focused on building scalable, high-performance web applications using
+                    MongoDB, Express.js, React, and Node.js. I specialize in designing efficient APIs, developing modular
+                    front-end architectures, and deploying full-stack solutions with strong attention to performance,
+                    security, and maintainability. My work emphasizes clean code, modern JavaScript practices, and
+                    creating reliable, user-centric applications from end to end.
+                </p>
+                <div class="mt-8">
+                    <div class="flex justify-center lg:justify-start">
+                        <button
+                            class="bg-gradient-to-r from-[#374151] via-[#f43f5e] to-[#fb923c] text-sm sm:text-lg px-8 py-2 rounded-2xl font-semibold transition-transform duration-300 hover:scale-110">
+                            <a href="#contact">Contact</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    
+    <main id="Skills" class="bg-black/70 mt-32 pt-12 pb-10 rounded-t-3xl shadow-2xl fade-in-up">
+        <div class="flex justify-center text-3xl sm:text-4xl font-bold transition-transform duration-300 hover:scale-110">
+            skills
+        </div>
+
+        <div class="max-w-5xl mx-auto mt-10 px-4">
+            <div class="flex flex-wrap justify-center">
+                <div class="skill bg-black/40 p-4 rounded-xl shadow shadow-slate-800/50">
+                    <img src="MongoDB.svg" alt="MongoDB">
+                    <span class="flex justify-center mt-2">MongoDB</span>
+                </div>
+                <div class="skill bg-black/40 p-4 rounded-xl shadow shadow-slate-800/50">
+                    <img src="express.svg" alt="Express.js">
+                    <span class="flex justify-center mt-2">Express.js</span>
+                </div>
+                <div class="skill bg-black/40 p-4 rounded-xl shadow shadow-slate-800/50">
+                    <img src="React-icon.svg.png" alt="React.js">
+                    <span class="flex justify-center mt-2">React.js</span>
+                </div>
+                <div class="skill bg-black/40 p-4 rounded-xl shadow shadow-slate-800/50">
+                    <img src="Node.j.png" alt="Node.js">
+                    <span class="flex justify-center mt-2">Node.js</span>
+                </div>
+                <div class="skill bg-black/40 p-4 rounded-xl shadow shadow-slate-800/50">
+                    <img src="js.jpg" alt="JavaScript">
+                    <span class="flex justify-center mt-2">JavaScript</span>
+                </div>
+                <div class="skill bg-black/40 p-4 rounded-xl shadow shadow-slate-800/50">
+                    <img src="Git_icon.svg.png" alt="Git">
+                    <span class="flex justify-center mt-2">Git</span>
+                </div>
+                <div class="skill bg-black/40 p-4 rounded-xl shadow shadow-slate-800/50">
+                    <img src="GitHub-Mark-ea2971cee799.png" alt="GitHub">
+                    <span class="flex justify-center mt-2">GitHub</span>
+                </div>
+                <div class="skill bg-black/40 p-4 rounded-xl shadow shadow-slate-800/50">
+                    <img src="HTML5_logo_and_wordmark.svg.png" alt="HTML5">
+                    <span class="flex justify-center mt-2">HTML5</span>
+                </div>
+                <div class="skill bg-black/40 p-4 rounded-xl shadow shadow-slate-800/50">
+                    <img src="CSS3_logo_and_wordmark.svg" alt="CSS3">
+                    <span class="flex justify-center mt-2">CSS3</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+   
+    <main id="projects" class="mt-24 fade-in-up px-4">
+        <div class="transition-transform duration-300 hover:scale-110 flex justify-center text-2xl sm:text-3xl">
+            projects
+        </div>
+
+        <div class="max-w-5xl mx-auto mt-8 grid gap-8 md:grid-cols-2">
+            <div class="m-2 bg-black/30 rounded-2xl p-5 shadow-xl shadow-slate-900/60">
+                <div class="rounded-2xl overflow-hidden">
+                    <img src="Screenshot (29).png" alt="EaseMyTrip clone"
+                         class="rounded-2xl transition-transform duration-300 hover:scale-105 shadow-2xl hover:shadow-blue-500/50">
+                </div>
+                <div class="mt-3 text-center text-white">EaseMyTrip clone</div>
+            </div>
+
+            <div class="m-2 bg-black/30 rounded-2xl p-5 shadow-xl shadow-slate-900/60">
+                <div class="rounded-2xl overflow-hidden">
+                    <img src="Screenshot (30).png" alt="W3 School Navbar"
+                         class="rounded-2xl transition-transform duration-300 hover:scale-105 shadow-2xl hover:shadow-blue-500/50">
+                </div>
+                <div class="mt-3 text-center text-white">W3 School Navbar</div>
+            </div>
+
+            <div class="m-2 bg-black/30 rounded-2xl p-5 shadow-xl shadow-slate-900/60 md:col-span-2 md:max-w-md md:mx-auto">
+                <div class="rounded-2xl overflow-hidden">
+                    <img src="Screenshot (31).png" alt="Bank Balance"
+                         class="rounded-2xl transition-transform duration-300 hover:scale-105 shadow-2xl hover:shadow-blue-500/50">
+                </div>
+                <div class="mt-3 text-center text-white">Bank Balance</div>
+            </div>
+        </div>
+    </main>
+
+   
+    <main id="contact" class="mt-24 fade-in-up px-4">
+        <div class="transition-transform duration-300 hover:scale-110 flex justify-center text-2xl sm:text-3xl mt-4">
+            contact
+        </div>
+
+        <div class="max-w-5xl mx-auto mt-6">
+            <div class="text-3xl sm:text-4xl font-bold">
+                Get In Touch
+            </div>
+
+            <div class="mt-2 h-1 w-14 rounded-full bg-cyan-500"></div>
+
+            <div class="text-slate-300 mt-6 max-w-xl text-sm sm:text-base font-semibold">
+                Have a question? Feel free to drop me a message.
+            </div>
+
+            <div class="mt-10 flex flex-col lg:flex-row gap-10">
+               
+                <div class="flex-1">
+                    <div class="text-lg sm:text-xl font-semibold">
+                        Contact information
+                    </div>
+                    <div class="mt-2 max-w-sm text-sm sm:text-base font-semibold text-slate-200">
+                        Fill up the form and I will get back to you as soon as possible.
+                    </div>
+
+                    <div class="mt-8 space-y-8">
+                        <div>
+                            <i class="fas fa-envelope text-blue-500"></i>
+                            <span class="ml-3 text-white font-medium">Email</span>
+                            <div class="ml-8 text-slate-200 text-sm sm:text-base">
+                                muhammedshafikt85@gmail.com
+                            </div>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-location-dot text-blue-500"></i>
+                            <span class="ml-3 text-white font-medium">Location</span>
+                            <div class="ml-8 text-slate-200 text-sm sm:text-base">
+                                Kerala, India
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+               
+                <div class="flex-1 bg-white/5 p-5 sm:p-6 rounded-3xl shadow-xl shadow-slate-900/60">
+                    <div class="mb-4">
+                        <label for="Name" class="block text-sm font-medium text-slate-200 mb-1">Name</label>
+                        <input type="text" id="Name" placeholder="Enter your Name"
+                               class="w-full rounded-md border border-slate-600 bg-slate-900/60 px-3 py-2
+                               text-sm text-slate-100 placeholder:text-slate-400 
+                               focus:border-transparent focus:outline-none 
+                               focus:ring-2 focus:ring-cyan-400">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="Email" class="block text-sm font-medium text-slate-200 mb-1">Email</label>
+                        <input type="email" id="Email" placeholder="Enter your Email"
+                               class="w-full rounded-md border border-slate-600 bg-slate-900/60 px-3 py-2
+                               text-sm text-slate-100 placeholder:text-slate-400 
+                               focus:border-transparent focus:outline-none 
+                               focus:ring-2 focus:ring-cyan-400">
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="Message" class="block text-sm font-medium text-slate-200 mb-1">Message</label>
+                        <textarea id="Message" placeholder="Enter message here"
+                                  class="w-full md:w-[500px] max-w-full rounded-md border border-slate-600 bg-slate-900/60 px-3 py-2
+                                  text-sm text-slate-100 placeholder:text-slate-400 
+                                  focus:border-transparent focus:outline-none min-h-[132px]
+                                  focus:ring-2 focus:ring-cyan-400"></textarea>
+                    </div>
+
+                    <button onclick="sendmail()" id="sendmessage"
+                            class="w-full py-2 text-center text-white text-base sm:text-lg font-medium rounded-xl 
+                            bg-gradient-to-r from-blue-400 to-blue-600 shadow-xl 
+                            hover:opacity-90 transition">
+                        Send Message
+                    </button>
+                </div>
+            </div>
+
+         
+            <div class="flex justify-center mt-10 gap-4">
+                <a href="https://www.linkedin.com/in/muhammedshafikt?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                   class="transition-transform duration-300 hover:scale-125">
+                    <img src="download.svg" width="25" />
+                </a>
+                <a href="#"
+                   class="transition-transform duration-300 hover:scale-125">
+                    <img src="download (1).svg" width="25" />
+                </a>
+                <a href="https://www.instagram.com/shhaaafy?igsh=YXBnbHdjZHdkY3A4&utm_source=qr"
+                   class="transition-transform duration-300 hover:scale-125">
+                    <img src="download (2).svg" width="25" />
+                </a>
+            </div>
+
+            <div class="text-slate-300 flex justify-center mt-3 mb-24 text-xs sm:text-sm font-extralight text-center">
+                ©2025 Muhammed Shafi KT | Built with HTML, CSS & JavaScript
+            </div>
+        </div>
+    </main>
+</div>
+
+<script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    function sendmail() {
+        const nameValue = document.getElementById("Name").value.trim();
+        const emailValue = document.getElementById("Email").value.trim();
+        const messageValue = document.getElementById("Message").value.trim();
+
+        if (!nameValue || !emailValue || !messageValue) {
+            alert("Please fill all fields before sending.");
+            return;
+        }
+
+        let params = {
+            name: nameValue,
+            email: emailValue,
+            message: messageValue
+        };
+
+        const serviceID = "service_3ubehzn";
+        const templateID = "template_kzju0yr";
+
+        emailjs.send(serviceID, templateID, params)
+            .then(res => {
+                document.getElementById("Name").value = "";
+                document.getElementById("Email").value = "";
+                document.getElementById("Message").value = "";
+                console.log(res);
+                alert("Your message was sent successfully.");
+            })
+            .catch((err) => {
+                console.error(err);
+                alert("Something went wrong while sending. Check console for details.");
+            });
+    }
+</script>
+
+</body>
+</html>
